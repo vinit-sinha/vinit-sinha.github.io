@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1379885606 source:v:\workspace\cpp\projects\vinks_compiler\src\main.cpp
+	<iostream>
+	<thread>
+	"core/charset/basic_source/basic_source_encoding.h"
+
+1379885047 v:\workspace\cpp\projects\vinks_compiler\include\core\charset\basic_source\basic_source_encoding.h
+	"core/charset/basic_source/char_types.h"
+
+1379884098 v:\workspace\cpp\projects\vinks_compiler\include\core\charset\basic_source\char_types.h
+
