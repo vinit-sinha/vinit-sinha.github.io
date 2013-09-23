@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>vinks_compiler: Character sets</title>
+<title>vinks_compiler: Basic Source Character Set</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,8 +45,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('_basic_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -98,18 +98,75 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Character sets </div>  </div>
+<div class="title">Basic Source Character Set </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This documentation breifs character sets used by C++ compilers to parse and compile source files. Descriptions provided here maps to chracter set definitions defined by official C++11 Standard named <b>ISO IEC 14882-2011</b> </p>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#bscs">Basic Source Character Set</a></li>
+<li class="level1"><a href="#bscs_chars">Constituent characters</a><ul><li class="level2"><a href="#bscs_ws">White space characters</a></li>
+<li class="level2"><a href="#bscs_gs">Graphical Characters</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p>This documentation breifs basic source character set as defined in official C++11 Standard named **ISO IEC 14882-2011</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add link to the official and draft version. </dd></dl>
-<p><a class="el" href="bscs.html">Basic Source Character Set</a> Describes the basic source character set. </p>
+<h1><a class="anchor" id="bscs"></a>
+Basic Source Character Set</h1>
+<p>C++ Source files are assumed to be written in Basic Source Character Set. It is based on the US variant of the international 7-bit character set <b>ISO 646-1983</b> called <b>ASCII</b> (ANSI3.4-1968)</p>
+<h1><a class="anchor" id="bscs_chars"></a>
+Constituent characters</h1>
+<p>Basic source character set is defined to consist a total of 96 ASCII characters falling into following categories</p>
+<ul>
+<li>White Space Characters</li>
+<li>Graphical Characters </li>
+</ul>
+<h2><a class="anchor" id="bscs_ws"></a>
+White space characters</h2>
+<p>These are total 5 in number and includes following</p>
+<ul>
+<li>Space Character: ASCII character for blank space</li>
+<li>Control characters representing<ul>
+<li>Horizontal tab: ASCII character for horizontal tab.Basic source character set assigns an escape sequence, <code>\t</code> to this character</li>
+<li>Vertical tab: ASCII character for vertical tab.Basic source character set assigns an escape sequence, <code>\v</code> to this character</li>
+<li>Form feed: ASCII character for Form Feed.Basic source character set assigns an escape sequence, <code>\f</code> to this character</li>
+<li>New Line: ASCII character for New Line.Basic source character set assigns an escape sequence, <code>\n</code> to this character </li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="bscs_gs"></a>
+Graphical Characters</h2>
+<p>These are total 91 in number containing 52 letters, 10 digits and 29 punctuation and operator symbols</p>
+<ul>
+<li>Letters<ul>
+<li>Upper case letters: ASCII characters for upper case english letters <blockquote class="doxtable">
+<p><code>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</code></p>
+<p></p>
+</blockquote>
+</li>
+<li>Lower case letters: ASCII characters for lower case english letters <blockquote class="doxtable">
+<p><code>a b c d e f g h i j k l m n o p q r s t u v w x y z</code></p>
+<p></p>
+</blockquote>
+</li>
+<li>Digits: ASCII characters for all 10 digits <blockquote class="doxtable">
+<p><code>0 1 2 3 4 5 6 7 8 9</code></p>
+<p></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Punctuator and Operator Symbols: ASCII characters for punctuators and operators used by C++ source files <blockquote class="doxtable">
+<p><code>_ { } [ ] # ( ) &lt; &gt; % : ; . ? * + - / ^ &amp; | ~ ! = , \ "</code> </p>
+</blockquote>
+</li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 23 2013 02:53:36 for vinks_compiler by
+    <li class="footer">Generated on Mon Sep 23 2013 00:05:38 for vinks_compiler by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
